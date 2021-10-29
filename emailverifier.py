@@ -10,7 +10,7 @@ ka=list(email_address.read().split())
 #Check using Regex that an email meets minimum requirements, throw an error if not
 for addressToVerify in ka:
     #addressToVerify = email_address
-    match = re.match('^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$', addressToVerify)
+    match = re.match('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$', addressToVerify)
 
     if match == None:
         print('Bad Syntax in ' + addressToVerify)
