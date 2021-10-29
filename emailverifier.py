@@ -57,4 +57,4 @@ for addressToVerify in ka:
         file1.close()
         print('invalid address: ',addressToVerify)
         print('No')
-
+email_address.close()
